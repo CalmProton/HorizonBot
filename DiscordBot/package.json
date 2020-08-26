@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/CalmProton/HorizonBot/issues"
   },
-  "homepage": "https://github.com/CalmProton/HorizonBot#readme"
+  "homepage": "https://github.com/CalmProton/HorizonBot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
 }
