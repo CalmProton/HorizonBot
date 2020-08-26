@@ -5,6 +5,8 @@ const token = 'NzQ4MjUzMzI2OTgxODU3MzM3.X0avNw.v3XsOA5x07IJ47eDOoPJUhVOdjQ';
 
 const PREFIX = '%';
 
+var version = '0.1';
+
 bot.on('ready', () => {
     console.log('Bot is Online!');
 })
@@ -14,8 +16,16 @@ bot.on('message', message=>{
     let args = message.content.substring(PREFIX.length).split(" ");
 
     switch(args[0]){
-        case 'ping':
-            message.channel.send('pihg!')
+        case 'vk':
+            message.channel.send('vk.com/horizoncraft')
+            break;
+        case 'info':
+            if(args[1] === 'version'){
+              message.reply(version)
+            }
+            else{
+              message.channel.send('Invalid Args')
+            }
             break;
 
     }
