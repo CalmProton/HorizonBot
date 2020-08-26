@@ -15,7 +15,7 @@ bot.on('message', message=>{
 
     switch(args[0]){
         case 'ping':
-            message.channel.send('pong!')
+            message.channel.send('pihg!')
             break;
 
     }
