@@ -1,8 +1,13 @@
 const {Client, RichEmbed} = require('discord.js');
-const bot = new Client();
+const Discord = require('discord.js');
+
+module.exports = bot => {
 
 bot.on('guildMemberAdd', member =>{
-    const welcomeEmbed = new RichEmbed()
+    const welcomeEmbed = new Discord.MessageEmbed()
     .setTitle ("Welcome Embed");
-    message.author.send(Embed);
+
+    member.send(welcomeEmbed);
 })
+
+}

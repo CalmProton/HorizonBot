@@ -7,9 +7,15 @@ const PREFIX = '%';
 
 var version = '0.1';
 
+const greeting = require('./greeting')
+
 bot.on('ready', () => {
     console.log('Bot is Online!');
+
+    greeting(bot)
 })
+
+
 
 bot.on('message', message=>{
 
