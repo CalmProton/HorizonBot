@@ -6,6 +6,7 @@ const config = require('./config.json')
 const greeting = require('./greeting')
 const commands = require('./commands')
 const poll = require('./poll')
+const status = require('./status')
 
 const botMessage = require('./botMessage')
 
@@ -20,6 +21,7 @@ bot.on('ready', () => {
     greeting(bot)
     commands(bot)
     poll(bot)
+    status(bot)
 
     botMessage(bot, '708059100692480092', faqEmbed, ['😀'])
 })
