@@ -8,7 +8,9 @@ bot.on('guildMemberAdd', member =>{
     .setTitle ("Добро пожаловать")
     .setURL('https://vk.com/horizoncraft/')
     .setAuthor('HorizonCraft')
-    .setDescription('Проблем не обнаружено')
+    .addFields(
+        { name: '\u200B', value: '\u200B' },
+    )
     .addField('IP адрес: play.horizoncraft.ru')
     .setFooter('Группа ВК: vk.com/horizoncraft')
     member.send(welcomeEmbed);
