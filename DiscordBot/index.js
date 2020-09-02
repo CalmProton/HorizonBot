@@ -13,8 +13,10 @@ const botMessage = require('@modules/botMessage')
 
 const {Client, RichEmbed} = require('discord.js');
 
+/*
 const faqEmbed= new Discord.MessageEmbed()
     .setTitle ("Тестируем");
+*/
 
 bot.on('ready', () => {
     console.log('Bot is Online!');
