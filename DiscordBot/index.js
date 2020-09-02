@@ -3,13 +3,13 @@ const bot = new Discord.Client();
 
 const config = require('./config.json')
 
-const greeting = require('./modules/greeting')
-const commands = require('./modules/commands')
-const poll = require('./modules/poll')
-const status = require('./modules/status')
-const memberCount = require('./modules/memberCount')
+const greeting = require('@modules/greeting')
+const commands = require('@modules/commands')
+const poll = require('@modules/poll')
+const status = require('@modules/status')
+const memberCount = require('@modules/memberCount')
 
-const botMessage = require('./modules/botMessage')
+const botMessage = require('@modules/botMessage')
 
 const {Client, RichEmbed} = require('discord.js');
 
