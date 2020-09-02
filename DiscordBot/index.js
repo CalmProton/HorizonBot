@@ -3,13 +3,14 @@ const bot = new Discord.Client();
 
 const config = require('./config.json')
 
-const greeting = require('@modules/greeting')
-const commands = require('@modules/commands')
-const poll = require('@modules/poll')
-const status = require('@modules/status')
-const memberCount = require('@modules/memberCount')
+const greeting = require('./greeting')
+const commands = require('./commands')
+const poll = require('./poll')
+const status = require('./status')
+const memberCount = require('./memberCount')
+const roleClaim = require('./roleClaim')
 
-const botMessage = require('@modules/botMessage')
+const botMessage = require('./botMessage')
 
 const {Client, RichEmbed} = require('discord.js');
 
@@ -26,8 +27,9 @@ bot.on('ready', () => {
     poll(bot)
     status(bot)
     memberCount(bot)
+    roleClaim(bot)
 
-    botMessage(bot, '708059100692480092', faqEmbed, ['😀'])
+    //botMessage(bot, '708059100692480092', faqEmbed, ['😀'])
 })
 
 bot.login(config.token);
