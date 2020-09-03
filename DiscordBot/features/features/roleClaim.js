@@ -1,4 +1,4 @@
-const botMessage = require('./botMessage')
+const botMessage = require('@util/botMessage')
 
 module.exports = (bot) => {
   const channelId = '750709787095990403'
