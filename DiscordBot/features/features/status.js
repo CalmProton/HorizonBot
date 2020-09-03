@@ -1,6 +1,6 @@
 const ping = require('minecraft-server-util')
-const botMessage = require('../../util/botMessage')
-const config = require('../../config.json')
+const botMessage = require('@util/botMessage')
+const config = require('@root/config.json')
 const Discord = require('discord.js')
 
 const {Client, RichEmbed} = require('discord.js');
