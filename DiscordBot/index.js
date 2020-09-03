@@ -1,16 +1,18 @@
+require('module-alias/register')
+
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const config = require('./config.json')
+const config = require('@root/config.json')
 
-const greeting = require('./greeting')
-const commands = require('./commands')
-const poll = require('./poll')
-const status = require('./status')
-const memberCount = require('./memberCount')
-const roleClaim = require('./roleClaim')
+const greeting = require('@features/greeting')
+const commands = require('@util/commands')
+const poll = require('@features/poll')
+const status = require('@features/status')
+const memberCount = require('@features/memberCount')
+const roleClaim = require('@features/roleClaim')
 
-const botMessage = require('./botMessage')
+const botMessage = require('@util/botMessage')
 
 const {Client, RichEmbed} = require('discord.js');
 
