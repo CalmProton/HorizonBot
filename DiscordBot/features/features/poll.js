@@ -5,14 +5,17 @@ module.exports = bot => {
     ]
 
     const addReactions = (message) => {
+      if (message !== null) {
         message.react('👍')
 
         setTimeout(() => {
           message.react('👎')
         }, 550)
       }
+      }
 
       bot.on('message', async (message) => {
+        if (message !== null) {
         if (channelIDs.includes(message.channel.id)) {
           addReactions(message)
         } else if (message.content.toLowerCase() === '!poll') {
@@ -23,5 +26,6 @@ module.exports = bot => {
             addReactions(fetched.first())
           }
         }
+      }
       })
     }
