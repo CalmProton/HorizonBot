@@ -25,4 +25,4 @@ bot.on('ready', () => {
     //botMessage(bot, '708059100692480092', faqEmbed, ['😀'])
 })
 
-bot.login(config.token);
+bot.login(process.env.TOKEN);
