@@ -48,7 +48,7 @@ module.exports = (bot) => {
   }
 
   bot.on('messageReactionAdd', (reaction, user) => {
-    console.log("added reaction")
+    console.log("added reaction" + reaction + user)
     if (reaction.message.channel.id === channelId) {
       handleReaction(reaction, user, true)
     }
