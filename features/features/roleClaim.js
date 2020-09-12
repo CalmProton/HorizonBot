@@ -26,7 +26,9 @@ module.exports = (bot) => {
     .setTitle ("Сервер в сети")
     .setURL('https://vk.com/horizoncraft/')
 
-  const embed = require('@embeds/verification.json')
+  const verEmbed = require('@embeds/verification.json')
+
+  let messageText = verEmbed
   botMessage(bot, channelId, embed, reactions)
 
   const handleReaction = (reaction, user, add) => {
