@@ -1,4 +1,7 @@
 const botMessage = require('@util/botMessage')
+const Discord = require('discord.js')
+
+const {Client, RichEmbed} = require('discord.js');
 
 module.exports = (bot) => {
   const channelId = '750709787095990403'
@@ -14,15 +17,17 @@ module.exports = (bot) => {
 
   const reactions = []
 
-
-   let emojiText = 'Вы человек?\n\nБип бип боп?\n\u200B'
-   for (const key in emojis) {
-     const emoji = getEmoji(key)
-     reactions.push(emoji)
+  for (const key in emojis) {
+    const emoji = getEmoji(key)
+    reactions.push(emoji)
    }
 
-   messageId.react(reactions[0])
-  // botMessage(bot, channelId, emojiText, reactions)
+  const onlineEmbed= new Discord.MessageEmbed()
+    .setTitle ("Сервер в сети")
+    .setURL('https://vk.com/horizoncraft/')
+
+  const embed = require('@embeds/verification.json')
+  botMessage(bot, channelId, embed, reactions)
 
   const handleReaction = (reaction, user, add) => {
     if (user.id === '748253326981857337') {

@@ -32,6 +32,7 @@
   "_moduleAliases": {
     "@root": ".",
     "@util": "./util",
-    "@features": "./features/features"
+    "@features": "./features/features",
+    "@embeds": "./embeds"
   }
 }
