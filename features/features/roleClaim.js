@@ -21,7 +21,8 @@ module.exports = (bot) => {
     reactions.push(emoji)
    }
 
-  const message = msg.channel.messages.fetch(messageId)
+  // const message = msg.channel.messages.fetch(messageId)
+
   // botMessage(bot, channelId, messageText, reactions)
 
   const handleReaction = (reaction, user, add) => {
