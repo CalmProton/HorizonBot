@@ -14,7 +14,7 @@ module.exports = (bot) => {
   const emojis = {
     verified: 'Игрок',
   }
-
+  //lol
   const reactions = []
 
   for (const key in emojis) {
