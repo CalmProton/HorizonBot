@@ -29,6 +29,8 @@ module.exports = (bot) => {
   const verEmbed = require('@embeds/verification.json')
 
   let messageText = verEmbed
+
+  console.log(messageText)
   botMessage(bot, channelId, messageText, reactions)
 
   const handleReaction = (reaction, user, add) => {
