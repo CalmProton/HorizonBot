@@ -29,7 +29,7 @@ module.exports = (bot) => {
   const verEmbed = require('@embeds/verification.json')
 
   let messageText = verEmbed
-  botMessage(bot, channelId, embed, reactions)
+  botMessage(bot, channelId, messageText, reactions)
 
   const handleReaction = (reaction, user, add) => {
     if (user.id === '748253326981857337') {
