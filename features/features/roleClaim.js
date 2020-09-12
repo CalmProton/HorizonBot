@@ -6,8 +6,6 @@ const {Client, RichEmbed} = require('discord.js');
 module.exports = (bot) => {
   const channelId = '750709787095990403'
 
-  const messageId = '754363604651737179'
-
   const getEmoji = (emojiName) =>
     bot.emojis.cache.find((emoji) => emoji.name === emojiName)
 
@@ -50,6 +48,7 @@ module.exports = (bot) => {
   }
 
   bot.on('messageReactionAdd', (reaction, user) => {
+    console.log("added reaction")
     if (reaction.message.channel.id === channelId) {
       handleReaction(reaction, user, true)
     }
